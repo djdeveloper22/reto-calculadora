@@ -29,3 +29,4 @@ if(isNaN(notaFinal)){
     console.log('el numero ingresado esta fuera del rango notarial...')
   }
 }
+console.groupEnd();
