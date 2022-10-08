@@ -17,7 +17,7 @@ do{
     console.log('<-');
     console.log('<-');
     console.log('presione enter para seguir almacenando numeros\n de lo contrario digite cancelar.');
-    opcionCancelar = scanf('%S');
+    opcionCancelar = scanf('%S').toLowerCase();
     opcionCancelar === 'seguir' ? console.log(): opcionCancelar === 'cancelar';
   }
 }while(opcionCancelar !== 'cancelar');
