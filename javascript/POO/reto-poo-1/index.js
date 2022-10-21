@@ -22,6 +22,7 @@ if(status !== 'Y' && status !== 'N'){
   console.log('Error');
 }else{
   let cont = 0;
+  aMixer[random_number].statusOff = false;
   while(status !== 'Y')
   cont++;
   console.log(`--------------------------------------\n
