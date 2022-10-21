@@ -1,0 +1,16 @@
+{
+  "name": "reto-poo-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "keywords": [],
+  "author": "Darwin Junior <djmendoza39@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "scanf": "^1.1.2"
+  }
+}

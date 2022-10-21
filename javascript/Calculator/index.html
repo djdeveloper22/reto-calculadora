@@ -8,41 +8,45 @@
     <link rel="stylesheet" href="./src/assets/css/apps.css" />
   </head>
   <body>
-    <div id="app" class="container">
-      <div class="calculator container__calculator">
-        <div class="content-calculator calculator__wrapper">
-          <div class="elements-result-calculator content-calculator__result">
-            <div class="elements-result-calculator"></div>
-            <div class="elements-result-calculator"></div>
-            <div class="elements-result-calculator"></div>
-          </div>
-          <div class="content-calculator__buttons">
-            <div class="container-grid-buttons">
-              <div class="container-grid-buttons__button"><button class="button">AC</button></div>
-              <div class="container-grid-buttons__button"><button class="button">+/-</button></div>
-              <div class="container-grid-buttons__button"><button class="button">%</button></div>
-              <div class="container-grid-buttons__button"><button class="button">÷</button></div>
-              <div class="container-grid-buttons__button"><button class="button">1</button></div>
-              <div class="container-grid-buttons__button"><button class="button">2</button></div>
-              <div class="container-grid-buttons__button"><button class="button">3</button></div>
-              <div class="container-grid-buttons__button"><button class="button">x</button></div>
-              <div class="container-grid-buttons__button"><button class="button">4</button></div>
-              <div class="container-grid-buttons__button"><button class="button">5</button></div>
-              <div class="container-grid-buttons__button"><button class="button">6</button></div>
-              <div class="container-grid-buttons__button"><button class="button">-</button></div>
-              <div class="container-grid-buttons__button"><button class="button">7</button></div>
-              <div class="container-grid-buttons__button"><button class="button">8</button></div>
-              <div class="container-grid-buttons__button"><button class="button">9</button></div>
-              <div class="container-grid-buttons__button"><button class="button">+</button></div>
-              <div class="container-grid-buttons__button"><button class="button">.</button></div>
-              <div class="container-grid-buttons__button"><button class="button">0</button></div>
-              <div class="container-grid-buttons__button"><button class="button">00</button></div>
-              <div class="container-grid-buttons__button"><button class="button">=</button></div>
-            </div>
+    <div id="app">
+      <div class="container">
+        <div class="container__calculator">
+          <div class="container__calculator-grid">
+            <div class="contenedor-resultados"></div>
+              <div class="container-grid-btn contenedor-btn-numeros">
+                <div class="contenedor-signos">
+                  <button class="button button--bg-signos">÷</button>
+                  <button class="button button--bg-signos">*</button>
+                  <button class="button button--bg-signos">-</button>
+                  <button class="button button--bg-signos">+</button>
+                  <button class="button">=</button>
+                </div> 
+                <div class="contenedor-signos contendenor-signos--bg contendenor-signos--col-three ">
+                  <button class="button">%</button>
+                  <button class="button">3</button>
+                  <button class="button">6</button>
+                  <button class="button">9</button>
+                  <button class="button">00</button>
+                </div> 
+                <div class="contenedor-signos contendenor-signos--bg contendenor-signos--col-two ">
+                  <button class="button">+/-</button>
+                  <button class="button">2</button>
+                  <button class="button">5</button>
+                  <button class="button">8</button>
+                  <button class="button">0</button>
+                </div> 
+                <div class="contenedor-signos contendenor-signos--bg contendenor-signos--col-one ">
+                  <button class="button">AC</button>
+                  <button class="button">1</button>
+                  <button class="button">4</button>
+                  <button class="button">7</button>
+                  <button class="button">0</button>
+                </div> 
+                <div class="container-grid-btn--line"></div>
+              </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="./dist/main.js"></script>
   </body>
 </html>

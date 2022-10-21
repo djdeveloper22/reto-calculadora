@@ -1,65 +1,83 @@
-.container__calculator{
-  display: grid;
-  height: 80vh;
-  place-content: center;
-  width: 80%;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-  .content-calculator{
-    &.calculator__wrapper{
-      background-color: #8a8eb0;
-      background-image: linear-gradient(to right, #1b1c20 , #1b1c20);
-      border-radius: 1.6rem;
-      height: 800px;
-      width: 400px;
-      overflow: hidden;
-    }
-
+  .container__calculator {
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 
-    .elements-result-calculator{
-      &.content-calculator__result{
-        flex-grow: 1;
+    .container__calculator-grid {
+      width: 30rem;
+      height: inherit;
+      background: linear-gradient(
+        166.34deg,
+        #373737 0%,
+        #252628 22.9%,
+        #000309 100%
+      );
+      border-radius: 40px;
+
+      .contenedor-resultados {
+        width: inherit;
+        height: 30vh;
       }
 
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+      .contenedor-btn-numeros {
+        width: inherit;
+        height: auto;
+        padding: 2rem;
+        background-image: linear-gradient(to right top, #031125, #071f37, #092c49, #093a5c, #044970);
+        border-radius: 30px;
+        border-radius: inherit;
 
-    .content-calculator__buttons{
-      background-image: linear-gradient(to right top, #051937, #072445, #073053, #073c62, #044970);
-      border-top-left-radius: 1.6rem;
-      border-top-right-radius: 1.6rem;
-      box-shadow: 0px -5px 70px rgba(0, 0, 0, 0.1);
-      flex-grow: 1;
-      height: 300px;
-
-      .container-grid-buttons{
-        color: aliceblue;
-        display: grid;
-        
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto auto auto auto;
-
-        .container-grid-buttons__button{
+        &.container-grid-btn {
           display: grid;
-          place-content: center;
-          padding: 1rem;
-          .button{
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(5, 1fr);
+
+          .contenedor-signos {
+            grid-column: 4/ 4 span;
+            grid-row: 1 / 5 span;
             background-color: #0505054D;
-            border-radius: 50%;
-            border: none;
-            color: #fff;
-            font-size: 26px;
-            height: 70px;
-            width: 70px;
+            border-radius: 6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 50vh;
+            width: 5rem;
+            place-self: center;
+
+            &.contendenor-signos--bg{
+              background-color: #04487000;
+              &.contendenor-signos--col-three{
+                grid-column: 3 / 3;
+              }
+              &.contendenor-signos--col-two{
+                grid-column: 2 / 2;
+              }
+              &.contendenor-signos--col-one{
+                grid-column: 1 / 1;
+              }
+            }
+          }
+          .container-grid-btn--line{
+            width: 14rem;
+            height: 0.3rem;
+            background-color: #3D76AB;
+            grid-column: 2 / 4;
+            margin-top: 1.5rem;
+            border-radius: 0.4rem;
+            
           }
         }
       }
-
-
     }
   }
 }

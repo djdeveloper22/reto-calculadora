@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +9,7 @@
 body{
   background-color: #0093E9;
   background-image: linear-gradient(to right, #02539D , #52ACFF);
+  font-family: 'Poppins', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -20,4 +23,18 @@ li{
 
 a{
   text-decoration: none;
+}
+
+.button{
+  background-color: #0505054D;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  &.button--bg-signos{
+    background-color: #05050500;
+  }
 }
