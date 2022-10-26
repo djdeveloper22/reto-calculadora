@@ -12,7 +12,9 @@ class Blender {
   }
 
   status(statusOn){
-    return statusOn;
+    if(statusOn !== 'Y')
+      throw 'Opcion no valida para el encendido de la licuadora...escoja la correcta';
+    return true;
   }
 
   speedCurrent(currentSpeed){
