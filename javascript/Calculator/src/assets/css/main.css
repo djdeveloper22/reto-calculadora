@@ -100,7 +100,7 @@
               .container .container__calculator .container__calculator-grid .contenedor-btn-numeros.container-grid-btn .contenedor-signos.contendenor-signos--bg.contendenor-signos--col-one {
                 grid-column: 1 / 1; }
           .container .container__calculator .container__calculator-grid .contenedor-btn-numeros.container-grid-btn .container-grid-btn--line {
-            width: 14rem;
+            width: 10rem;
             height: 0.3rem;
             background-color: #3D76AB;
             grid-column: 2 / 4;
