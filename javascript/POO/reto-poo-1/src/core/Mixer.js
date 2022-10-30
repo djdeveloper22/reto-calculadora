@@ -12,8 +12,9 @@ class Blender {
   }
 
   status(statusOn){
-    if(statusOn !== 'Y')
+    if(!statusOn) 
       throw 'Opcion no valida para el encendido de la licuadora...escoja la correcta';
+    
     return true;
   }
 
@@ -21,9 +22,15 @@ class Blender {
     return currentSpeed;
   }
 
-  speedLevel(){
+  speedShow(){
     return this.current.join(' * ');  
   } 
+
+  opSpeeds(level){
+    if(!this.current.find(elemento => elemento === level))
+      throw `Opciones de licuado correctas ${this.speedShow()}`;
+    return true;
+  }
 }
 
 module.exports = { Blender };

@@ -2,8 +2,11 @@ const scanf = require("scanf");
 const { aMixer } = require("./src/core/BD");
 const { Blender } = require("./src/core/Mixer");
 
+let isOn;
+let getLevel;
+let levelsOpcion = 0;
+let on;
 let random_number = Math.floor(Math.random() * 7);
-let opcionEncendido;
 
 const mixer = new Blender(
   aMixer[random_number].brand,
@@ -11,28 +14,59 @@ const mixer = new Blender(
   aMixer[random_number].speed
 );
 
-for (let i = 1; i <= mixer.speed; i++) mixer.current.push(i);
-
 console.group("---------------- Mixer -------------------");
 console.table(mixer);
 console.groupEnd();
 
+for (let i = 1; i <= mixer.speed; i++) 
+    mixer.current.push(i);
+
 do {
+  console.log('Encender Licuadora (Y)');
+  isOn = scanf('%S');
+  console.clear();
   try {
-    console.log("On Mixer (Y)");
-    opcionEncendido = scanf("%S");
+    on = mixer.status(true);
+    mixer.statusOn = on;
 
-    let encendido = mixer.status(opcionEncendido);
-
-    console.group("---------------- Mixer -------------------");
-    console.log(`brande: ${mixer.brander} \n StatusOn: ${mixer.statusOn = encendido} \n speed: ${mixer.speedCurrent(mixer.speed)} \n Current Speed: ${mixer.speedLevel()}`)
-    console.groupEnd();
-    
-    
   } catch (error) {
     console.log(error);
   }
-  
-} while (opcionEncendido !== "Y");
 
+} while (isOn !== 'Y');
+
+do {
+  console.group("---------------- Mixer -------------------");
+  console.table(`
+    Blender: ${mixer.brander}\n 
+    Status: ${mixer.statusOn}\n 
+    Speed: ${mixer.speed}\n 
+    Currents speed: ${levelsOpcion}\n 
+    Levels speed: ${mixer.speedShow()}
+  `);
+  console.groupEnd();
+
+  try {
+    console.log('niveles de velocidad: ');
+    levelsOpcion = scanf('%d');
+
+    mixer.opSpeeds(levelsOpcion);
+    
+  } catch (error) {
+    levelsOpcion = 1;
+    console.log(error);
+  }
+  console.log('Off blender (S/N)');
+  let off = scanf('%S');
+
+  console.clear();
+
+  if(off !== 'S')
+    console.log('blender On!!');
+  else
+    break;
+
+} while (levelsOpcion !== getLevel);
+
+console.clear();
 console.log("Thank you for using the blender");
