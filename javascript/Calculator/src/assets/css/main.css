@@ -15,6 +15,8 @@
       height: 40rem;
       background: linear-gradient(166.34deg, #373737 0%, #252628 22.9%, #000309 100%);
       border-radius: 40px; }
+      .container .container__calculator .container__calculator-grid.container__calculator-grid--light {
+        background: linear-gradient(166.34deg, #F9F9F9 0%, #F9F9F9 22.9%, #F3F3F3 100%, #E5E5E5 100%); }
       .container .container__calculator .container__calculator-grid .contenedor-resultados {
         width: inherit;
         height: 30vh; }
@@ -75,6 +77,9 @@
         background-image: linear-gradient(to right top, #031125, #071f37, #092c49, #093a5c, #044970);
         border-radius: 30px;
         border-radius: inherit; }
+        .container .container__calculator .container__calculator-grid .contenedor-btn-numeros.contenedor-btn-numeros--ligth {
+          background: #c2e0ff;
+          background: linear-gradient(75deg, #aed7ff 0%, #78b4f4 99%); }
         .container .container__calculator .container__calculator-grid .contenedor-btn-numeros.container-grid-btn {
           display: grid;
           grid-template-columns: repeat(4, 5.4rem);
@@ -87,6 +92,10 @@
             justify-content: space-between;
             height: 70px;
             border-radius: 70px; }
+            .container .container__calculator .container__calculator-grid .contenedor-btn-numeros.container-grid-btn .contenedor-signos-memoria.contenedor-signos-memoria--ligth {
+              background-color: #FFFFFF4D; }
+              .container .container__calculator .container__calculator-grid .contenedor-btn-numeros.container-grid-btn .contenedor-signos-memoria.contenedor-signos-memoria--ligth > button {
+                background-color: #ffffff00; }
             .container .container__calculator .container__calculator-grid .contenedor-btn-numeros.container-grid-btn .contenedor-signos-memoria > button {
               background-color: #0A283F; }
           .container .container__calculator .container__calculator-grid .contenedor-btn-numeros.container-grid-btn .contenedor-teclas-numericas {
@@ -106,3 +115,9 @@
             gap: 1rem;
             place-content: space-between;
             justify-self: end; }
+            .container .container__calculator .container__calculator-grid .contenedor-btn-numeros.container-grid-btn .contenedor-funciones-basicas.contenedor-funciones-basicas--ligth {
+              background-color: #FFFFFF4D; }
+              .container .container__calculator .container__calculator-grid .contenedor-btn-numeros.container-grid-btn .contenedor-funciones-basicas.contenedor-funciones-basicas--ligth > button {
+                color: #000309; }
+              .container .container__calculator .container__calculator-grid .contenedor-btn-numeros.container-grid-btn .contenedor-funciones-basicas.contenedor-funciones-basicas--ligth .button--bg-signo-igual-ligth {
+                background-color: #FFFFFF4D; }

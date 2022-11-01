@@ -36,10 +36,11 @@ a{
   font-weight: 600;
   color: #fff;
 
-  // &.button--bg-ligth{
-  //   background-color: #FFFFFF4D;
-  //   color: #050505ea;
-  // }
+  &.button--bg-ligth{
+    background-color: #FFFFFF4D;
+    color: #050505ea;
+  }
+  
   &.button--bg-signos{
     background-color: #05050500;
   }

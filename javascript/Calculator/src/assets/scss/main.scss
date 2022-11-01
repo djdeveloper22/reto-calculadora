@@ -23,15 +23,15 @@
       );
       border-radius: 40px;
 
-      // &.container__calculator-grid--light{
-      //   background: linear-gradient(
-      //   166.34deg,
-      //   #F9F9F9 0%,
-      //   #F9F9F9 22.9%,
-      //   #F3F3F3 100%,
-      //   #E5E5E5 100%
-      //   );
-      // }
+      &.container__calculator-grid--light{
+        background: linear-gradient(
+        166.34deg,
+        #F9F9F9 0%,
+        #F9F9F9 22.9%,
+        #F3F3F3 100%,
+        #E5E5E5 100%
+        );
+      }
 
       .contenedor-resultados {
         width: inherit;
@@ -115,6 +115,11 @@
         background-image: linear-gradient(to right top, #031125, #071f37, #092c49, #093a5c, #044970);
         border-radius: 30px;
         border-radius: inherit;
+
+        &.contenedor-btn-numeros--ligth{
+          background: rgb(194,224,255);
+          background: linear-gradient(75deg, rgb(174, 215, 255) 0%, rgb(120, 180, 244) 99%);    
+        }
         
         &.container-grid-btn {
           display: grid;
@@ -129,6 +134,14 @@
             justify-content: space-between;
             height: 70px;
             border-radius: 70px;
+
+            &.contenedor-signos-memoria--ligth{
+              background-color: #FFFFFF4D;
+
+              > button{
+                background-color: #ffffff00;
+              }
+            }
 
             > button{
                 background-color: #0A283F;
@@ -154,8 +167,21 @@
             gap: 1rem;
             place-content: space-between;
             justify-self: end;
-          }
 
+            &.contenedor-funciones-basicas--ligth{
+              background-color: #FFFFFF4D;
+
+              > button{
+                color: #000309;
+              }
+
+              .button--bg-signo-igual-ligth{
+                background-color: #FFFFFF4D;
+              }
+              
+            }
+
+          }
         }
       }
     }
